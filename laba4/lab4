@@ -1,0 +1,21 @@
+#1.1
+import math
+number = int(input('Введите число: '))
+sqrt_result = math.sqrt(number)
+print(f"Кв корень числа {number} равен {sqrt_result}")
+#1.2
+from datetime import datetime
+current_datetime = datetime.now()
+print(f"Текущая дата и время: {current_datetime}")
+#2
+import my_module
+result = my_module.add_numbers(8, 3)
+print(f"Сумма: {result}")
+#3
+from package.numbers.multiply import multiply_numbers
+from package.strings.concatenate import concatenate_strings
+
+multiply_result = multiply_numbers(4, 6)
+print(f"Произведение: {multiply_result}")
+concatenate_result = concatenate_strings("Всем, ", "Здравствуйте!")
+print(f"Конкатенация: {concatenate_result}")
