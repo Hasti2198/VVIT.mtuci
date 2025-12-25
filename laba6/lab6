@@ -48,7 +48,7 @@ else:
 
 
 class Vehicle:
-    def init(self, make, model):
+    def __init__(self, make, model):
         self.make = make
         self.model = model
 
@@ -58,7 +58,7 @@ class Vehicle:
 
 class Car(Vehicle):
     def __init__(self, make, model, fuel_type):
-        super().init(make, model)
+        super().__init__(make, model)
         self.fuel_type = fuel_type
 
     def get_info(self):
